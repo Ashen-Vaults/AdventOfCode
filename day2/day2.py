@@ -3,7 +3,7 @@
 def calculate_area_and_ribbons(file):
     total_surface = 0
     total_ribbons = 0
-    with open(file, 'r') as f:
+    with open(file) as f:
         for line in f:
             info = get_surface_area(line)
             total_surface += info[0]
